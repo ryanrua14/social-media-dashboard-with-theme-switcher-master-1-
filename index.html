@@ -5,83 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<!--Stylesheets-->
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center;  color: white}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+<div class="container-fluid">
+    <section class="header">
+        <h4><p class="secondary-text">Social Media Dashboard</p></h4>
+        <p class="primary-text">Total Followers: 23,004</p>
+        <div id="toggle-switch">
+            <h6><p class="primary-text">Dark Mode</p></h6>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+    </section>
+    <section>
+    <div class="card-deck">
+        <!--Big cards-->  
+        <!--Facebook-->
+        <div id="facebook" class="card">
+            <div class="card-body">
+            <div class="card-title">
+                <p class="primary-text">
+                    <img class="card-img" src="images/icon-facebook.svg" alt="Facebook logo">
+                 @nathanf</p>
+            </div>
+                <h1><p class="secondary-text">1987</p></h1>
+                <h5><p class="primary-text light">F O L L O  W E R S</p></h5>
+                <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt>12 Today</p></h6>
+            </div>
+        </div>
+        <!--Twitter-->
+        <div id="twitter" class="card">
+            <div class="card-body">
+                <div class="card-title">
+                   <p class="primary-text">
+                       <img class="card-img" src="images/icon-twitter.svg" alt="Twitter logo">
+                     @nathanf</p>
+                </div>
+                <h1><p class="secondary-text">1044</p></h1>
+                <h5><p class="primary-text light">F O L L O  W E R S</p></h5>
+                <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt>99 Today</p></h6>
+            </div>
+        </div>
+        <!--Instagram-->
+        <div id="instagram" class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <p class="primary-text">
+                        <img class="card-img" src="images/icon-instagram.svg" alt="Instagram logo">
+                    @realnathanf</p>
+                </div>
+                  <h1><p class="secondary-text">11k<p></h1>
+                  <h5><p class="primary-text light">F O L L O  W E R S</p></h5>
+                <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt>1099 Today</p></h6>
+            </div>
+        </div>
+        <!--Youtube-->
+        <div id="youtube" class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <p class="primary-text">
+                        <img class="card-img" src="images/icon-youtube.svg" alt="Youtube logo">
+                        Nathan F.</p>
+                </div>
+                     <h1><p class="secondary-text">8239</p></h1>
+                    <h5><p class="primary-text light">S U B S C R I B E R S</p></h5>
+                    <h6><p class="primary-red"><img class="svgicon" src="images/icon-down.svg" alt>144 Today</p></h6>
+                </div>
+        </div>
+    </div><!--End Card deck-->
+    </section>
+    <section>
+          Overview - Today
+        <!--Facebook-->
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                <div class="card-title">
+                Page Views
+                </div>
+                87
+                <p class="primary-green"><img src="images/icon-up.svg">3%</p>
+                </div>
+            </div>
+        <!--Facebook-->
+          Likes
+          52
+          2%
+        <!--Instagram-->
+          Likes
+          5462
+          2257%
+        <!--Instragram-->
+          Profile Views
+          52k
+          1375%
+        <!--Twitter-->
+          Retweets
+          117
+          303%
+        <!--Twitter-->
+          Likes
+          507
+          553%
 
-  Social Media Dashboard
-  Total Followers: 23,004
+          Likes
+          107
+          19%
 
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
+          Total Views
+          1407
+          12%
+        </div>
+    </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ryan Rua</a>.
+    </div>
   </div>
 </body>
 </html>

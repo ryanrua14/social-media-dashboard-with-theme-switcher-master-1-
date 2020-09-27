@@ -1,0 +1,31 @@
+.card-deck{
+    .card{
+        background-color: $darkDesatBlue;
+        text-align: center;
+        .card-title{
+            p{
+                font-size: 14px;
+            }//End p
+            .card-img{
+                height: 20px;
+                width: 20px;
+            }//End img
+        }//End title
+    }//End
+
+    #facebook{
+        @include border($facebook);
+    }//End
+
+    #twitter{
+        @include border($twitter);
+    }//End
+
+    #instagram{
+        @include border($instagram);
+    }//End
+
+    #youtube{
+        @include border($youtube);
+    }//End
+}//End

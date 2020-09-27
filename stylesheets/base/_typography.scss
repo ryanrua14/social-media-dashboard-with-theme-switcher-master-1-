@@ -1,0 +1,32 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+$inter: "Inter, rsms";
+
+//Size
+$bodyFont: 14px;
+
+//Weight
+$regular: 400;
+$bold: 700;
+
+.primary-text{
+    color: $desatBlue;
+    
+    .light{
+        font:{
+            weight: $regular;
+            size: 14px;
+        }//End
+    }//End
+}
+.secondary-text{
+    color: $white;
+}
+
+.primary-green{
+    color: $limeGreen;
+}
+
+.primary-red{
+    color: $brightRed;
+}

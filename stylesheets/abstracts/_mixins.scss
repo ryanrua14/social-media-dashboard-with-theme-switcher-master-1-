@@ -1,0 +1,24 @@
+@mixin transition($time){
+    -webkit-transition: $time;
+    -moz-transition: $time;
+    -o-transition: $time;
+    -ms-transition: $time;
+    transition: $time;
+}//End mixin
+
+@mixin transform($translate){
+    -webkit-transform: translateX($translate);
+    -ms-transform: translateX($translate);
+    -o-transform: translateX($translate);
+    -moz-transform: translateX($translate);
+    transform: translateX($translate);
+}//End mixin
+
+@mixin border($social){
+    border:{
+        top: 5px solid $social;
+        left: none;
+        right: none;
+        bottom: none;
+    }//End border
+}//End mixin
