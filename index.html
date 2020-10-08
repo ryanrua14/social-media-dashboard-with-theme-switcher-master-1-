@@ -6,8 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 <!--Stylesheets-->
-    <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
@@ -19,16 +19,18 @@
 </head>
 <body>
 <div class="container-fluid">
-    <section class="header">
+    <section class="flex-container">
+    <section class="header left">
         <h4><p class="secondary-text">Social Media Dashboard</p></h4>
         <p class="primary-text">Total Followers: 23,004</p>
-        <div id="toggle-switch">
-            <h6><p class="primary-text">Dark Mode</p></h6>
-                <label class="switch">
+        </section><hr>
+        <section class="header right">
+            <h6><p class="primary-text">Dark Mode
+                <label id="toggle-switch" class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
-                </label>
-            </div>
+                </label></p></h6>
+        </section>
     </section>
     <section>
     <div class="card-deck">
@@ -88,7 +90,7 @@
     </div><!--End Card deck-->
     </section>
     <section>
-          Overview - Today
+        <h5><p class="secondary-text">Overview - Today</p></h5>
         <!--Facebook-->
         <div class="card-deck">
             <div class="card">
@@ -97,37 +99,79 @@
                 Page Views
                 </div>
                 87
-                <p class="primary-green"><img src="images/icon-up.svg">3%</p>
+                <p class="primary-green right"><img src="images/icon-facebook.svg" alt="Facebook logo"><img src="images/icon-up.svg">3%</p>
                 </div>
             </div>
         <!--Facebook-->
-          Likes
-          52
-          2%
+            <div class="card">
+                <div class="card-body">
+                <div class="card-title">
+                Likes
+                </div>
+                52
+                <p class="primary-red right"><img src="images/icon-facebook.svg" alt="Facebook logo"><img src="images/icon-down.svg">2%</p>
+                </div>
+            </div>
         <!--Instagram-->
-          Likes
-          5462
-          2257%
+            <div class="card">
+                <div class="card-body">
+                <div class="card-title">
+                Likes
+                </div>
+                5462
+                <p class="primary-green right"><img src="images/icon-instagram.svg" alt="Instagram logo"><img src="images/icon-up.svg">2257%</p>
+                </div>
+            </div>
+        
         <!--Instragram-->
-          Profile Views
-          52k
-          1375%
+            <div class="card">
+                <div class="card-body">
+                <div class="card-title">
+                Profile Views
+                </div>
+                52k
+                <p class="primary-green right"><img src="images/icon-instagram.svg" alt="Instagram logo"><img src="images/icon-up.svg">1375%</p>
+                </div>
+            </div>
         <!--Twitter-->
-          Retweets
-          117
-          303%
+            <div class="card">
+                <div class="card-body">
+                <div class="card-title">
+                Retweets
+                </div>
+                117
+                <p class="primary-green right"><img src="images/icon-twitter.svg" alt="Twitter logo"><img src="images/icon-up.svg">303%</p>
+                </div>
+            </div>
         <!--Twitter-->
-          Likes
-          507
-          553%
-
-          Likes
-          107
-          19%
-
-          Total Views
-          1407
-          12%
+            <div class="card">
+                <div class="card-body">
+                <div class="card-title">
+                Likes
+                </div>
+                507
+                <p class="primary-green right"><img src="images/icon-twitter.svg" alt="Twitter logo"><img src="images/icon-up.svg">553%</p>
+                </div>
+            </div>
+       <!--Youtube-->
+            <div class="card">
+                <div class="card-body">
+                <div class="card-title">
+                Likes
+                </div>
+                107
+                <p class="primary-red right"><img src="images/icon-youtube.svg" alt="Youtube logo"><img src="images/icon-down.svg">19%</p>
+                </div>
+            </div>
+        <div class="card">
+                <div class="card-body">
+                <div class="card-title">
+                Total Views
+                </div>
+                1407
+                <p class="primary-red right"><img src="images/icon-youtube.svg" alt="Youtube logo"><img src="images/icon-down.svg">12%</p>
+                </div>
+            </div>
         </div>
     </section>
   <div class="attribution">

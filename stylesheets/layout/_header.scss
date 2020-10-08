@@ -1,0 +1,31 @@
+.flex-container{
+    display: flex;
+    background: $darkBlueTop;
+    flex:{
+        wrap: wrap;
+        direction: row;
+    }//End flex
+    hr{
+        width: 0%;
+    }//End hr
+    .header{
+        flex: 1;
+    }//End heaer
+    .right{
+        @include alignAll(right);
+    }//End right
+}//End
+
+@media only screen and (max-width: 740px){
+    .flex-container{
+        @include alignAll(left);
+        flex-direction: column;
+        hr{
+            width: 80%;
+            background-color: $desatBlue;
+        }//End hr
+        .right{
+            
+        }
+    }//End
+}//End

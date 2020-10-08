@@ -22,3 +22,9 @@
         bottom: none;
     }//End border
 }//End mixin
+
+@mixin alignAll($placement){
+    align-content: $placement;
+    justify-content: $placement;
+    text-align: $placement;
+}

@@ -1,6 +1,6 @@
 .card-deck{
     .card{
-        background-color: $darkDesatBlue;
+        background: $darkDesatBlue;
         text-align: center;
         .card-title{
             p{
@@ -22,7 +22,6 @@
     }//End
 
     #instagram{
-        @include border($instagram);
     }//End
 
     #youtube{
