@@ -1,4 +1,8 @@
 @import url(https://fonts.google.com/specimen/Inter);
+p {
+  color: white;
+}
+
 .primary-text {
   color: #8b97c6;
 }
@@ -15,6 +19,8 @@
   color: #1db489;
 }
 .primary-green .right {
+  align-content: right;
+  justify-content: right;
   text-align: right;
 }
 
@@ -47,6 +53,14 @@
   border-left: none;
   border-right: none;
   border-bottom: none;
+}
+.card-deck #instagram {
+  border-top: 5px solid transparent;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-image: linear-gradient(#fdc468, #df4996);
+  border-image-slice: 4;
 }
 .card-deck #youtube {
   border-top: 5px solid #c4032a;
@@ -117,6 +131,8 @@ input:focus + .slider {
 
 html {
   margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -125,35 +141,44 @@ body {
 
 section {
   margin: 5px;
+  padding: 10px;
 }
 
-.flex-container {
+.flex-container, .flex-container-header {
   display: flex;
-  background: #1f212e;
   flex-wrap: wrap;
   flex-direction: row;
 }
-.flex-container hr {
+.flex-container hr, .flex-container-header hr {
   width: 0%;
 }
-.flex-container .header {
+.flex-container .header, .flex-container-header .header {
   flex: 1;
 }
-.flex-container .right {
+.flex-container .left, .flex-container-header .left {
+  align-content: left;
+  justify-content: left;
+  text-align: left;
+}
+.flex-container .right, .flex-container-header .right {
   align-content: right;
   justify-content: right;
   text-align: right;
 }
 
+.flex-container-header {
+  background-color: #1f212e;
+}
+
 @media only screen and (max-width: 740px) {
-  .flex-container {
+  .flex-container-header {
     align-content: left;
     justify-content: left;
     text-align: left;
     flex-direction: column;
   }
-  .flex-container hr {
-    width: 80%;
+  .flex-container-header hr {
+    width: 90%;
     background-color: #8b97c6;
   }
 }

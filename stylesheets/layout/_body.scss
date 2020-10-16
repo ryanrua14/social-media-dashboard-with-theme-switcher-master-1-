@@ -1,5 +1,9 @@
 html{
     margin: 0;
+    overflow:{
+        y: auto;
+        x: hidden;
+    }
 }//End html
 
 body{
@@ -8,4 +12,5 @@ body{
 
 section{
     margin: 5px;
+    padding: 10px;
 }

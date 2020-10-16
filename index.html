@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
   
+    <script type="module" src="scripts/switchTheme.js"></script>
+    
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -19,7 +21,7 @@
 </head>
 <body>
 <div class="container-fluid">
-    <section class="flex-container">
+    <section class="flex-container-header">
     <section class="header left">
         <h4><p class="secondary-text">Social Media Dashboard</p></h4>
         <p class="primary-text">Total Followers: 23,004</p>
@@ -27,7 +29,7 @@
         <section class="header right">
             <h6><p class="primary-text">Dark Mode
                 <label id="toggle-switch" class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" onclick="switchTheme()">
                     <span class="slider round"></span>
                 </label></p></h6>
         </section>
@@ -40,12 +42,12 @@
             <div class="card-body">
             <div class="card-title">
                 <p class="primary-text">
-                    <img class="card-img" src="images/icon-facebook.svg" alt="Facebook logo">
+                    <img class="card-img" src="images/icon-facebook.svg" alt="Facebook logo"> 
                  @nathanf</p>
             </div>
                 <h1><p class="secondary-text">1987</p></h1>
                 <h5><p class="primary-text light">F O L L O  W E R S</p></h5>
-                <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt>12 Today</p></h6>
+                <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt> 12 Today</p></h6>
             </div>
         </div>
         <!--Twitter-->
@@ -53,12 +55,12 @@
             <div class="card-body">
                 <div class="card-title">
                    <p class="primary-text">
-                       <img class="card-img" src="images/icon-twitter.svg" alt="Twitter logo">
-                     @nathanf</p>
+                       <img class="card-img" src="images/icon-twitter.svg" alt="Twitter logo"> 
+                        @nathanf</p>
                 </div>
                 <h1><p class="secondary-text">1044</p></h1>
                 <h5><p class="primary-text light">F O L L O  W E R S</p></h5>
-                <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt>99 Today</p></h6>
+                <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt> 99 Today</p></h6>
             </div>
         </div>
         <!--Instagram-->
@@ -67,11 +69,11 @@
                 <div class="card-title">
                     <p class="primary-text">
                         <img class="card-img" src="images/icon-instagram.svg" alt="Instagram logo">
-                    @realnathanf</p>
+                     @realnathanf</p>
                 </div>
                   <h1><p class="secondary-text">11k<p></h1>
                   <h5><p class="primary-text light">F O L L O  W E R S</p></h5>
-                <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt>1099 Today</p></h6>
+                <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt> 1099 Today</p></h6>
             </div>
         </div>
         <!--Youtube-->
@@ -80,96 +82,156 @@
                 <div class="card-title">
                     <p class="primary-text">
                         <img class="card-img" src="images/icon-youtube.svg" alt="Youtube logo">
-                        Nathan F.</p>
-                </div>
+                         Nathan F.</p>
+                    </div>
                      <h1><p class="secondary-text">8239</p></h1>
                     <h5><p class="primary-text light">S U B S C R I B E R S</p></h5>
-                    <h6><p class="primary-red"><img class="svgicon" src="images/icon-down.svg" alt>144 Today</p></h6>
+                    <h6><p class="primary-red"><img class="svgicon" src="images/icon-down.svg" alt> 144 Today</p></h6>
                 </div>
         </div>
     </div><!--End Card deck-->
     </section>
+    <!--Bottom cards-->
     <section>
         <h5><p class="secondary-text">Overview - Today</p></h5>
         <!--Facebook-->
         <div class="card-deck">
             <div class="card">
-                <div class="card-body">
-                <div class="card-title">
-                Page Views
-                </div>
-                87
-                <p class="primary-green right"><img src="images/icon-facebook.svg" alt="Facebook logo"><img src="images/icon-up.svg">3%</p>
-                </div>
-            </div>
+                    <div class="card-body">
+                    <div class="flex-container">
+                        <section class="header left">
+                        <div class="card-title">
+                        <h2><p class="primary-text">Page Views</p></h2>
+                            </div>
+                              <h2><p>87</p></h2>
+                        </section>
+                        <section class="header right">
+                            <p class="primary-green"><img src="images/icon-facebook.svg" alt="Facebook logo"></p>
+                            <p class="primary-green right"><img src="images/icon-up.svg"> 3%</p>
+                        </section>
+                        </div>
+                    </div>
+                </div><!--End card-->
         <!--Facebook-->
             <div class="card">
                 <div class="card-body">
-                <div class="card-title">
-                Likes
-                </div>
-                52
-                <p class="primary-red right"><img src="images/icon-facebook.svg" alt="Facebook logo"><img src="images/icon-down.svg">2%</p>
+                    <div class="flex-container">
+                        <section class="header left">
+                        <div class="card-title">
+                            <h2><p class="primary-text">Likes</p></h2>
+                        </div>
+                            <h2><p>52</p></h2>
+                        </section>
+                        <section class="header right">
+                            <p class="primary-red right"><img src="images/icon-facebook.svg" alt="Facebook logo"></p>
+                            <p class="primary-red right"><img src="images/icon-down.svg"> 2%</p>
+                        </section>
+                    </div>
                 </div>
             </div>
         <!--Instagram-->
             <div class="card">
                 <div class="card-body">
-                <div class="card-title">
-                Likes
-                </div>
-                5462
-                <p class="primary-green right"><img src="images/icon-instagram.svg" alt="Instagram logo"><img src="images/icon-up.svg">2257%</p>
+                    <div class="flex-container">
+                        <section class="header left">
+                            <div class="card-title">
+                                <h2><p class="primary-text">Likes</p></h2>
+                            </div>
+                            <h2><p>5462</p></h2>
+                        </section>
+                            <section class="header right">
+                                <p class="primary-green right"><img src="images/icon-instagram.svg" alt="Instagram logo"></p>
+                                <p class="primary-green right"><img src="images/icon-up.svg"> 2257%</p>
+                        </section>
+                    </div>
                 </div>
             </div>
-        
         <!--Instragram-->
             <div class="card">
                 <div class="card-body">
-                <div class="card-title">
-                Profile Views
+                    <div class="flex-container">
+                        <section class="header left">
+                            <div class="card-title">
+                                <h2><p class="primary-text">Profile Views</p></h2>
+                            </div>
+                                <h2><p>52k</p></h2>
+                        </section>
+                            <section class="header right">
+                            <p class="primary-green right"><img src="images/icon-instagram.svg" alt="Instagram logo"></p>
+                            <p class="primary-green right"><img src="images/icon-up.svg"> 1375%</p>
+                    </section>
                 </div>
-                52k
-                <p class="primary-green right"><img src="images/icon-instagram.svg" alt="Instagram logo"><img src="images/icon-up.svg">1375%</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="card-deck">
+        <!--Twitter-->
+            <div class="card">
+                <div class="card-body">
+                    <div class="flex-container">
+                        <section class="header left">
+                        <div class="card-title">
+                            <h2><p class="primary-text">Retweets</p></h2>
+                        </div>
+                    <h2><p>117</p></h2>
+                        </section>
+                            <section class="header right">
+                            <p class="primary-green right"><img src="images/icon-twitter.svg" alt="Twitter logo"></p> 
+                            <p class="primary-green right"><img src="images/icon-up.svg"> 303%</p>
+                        </section>
+                    </div>
                 </div>
             </div>
         <!--Twitter-->
             <div class="card">
                 <div class="card-body">
-                <div class="card-title">
-                Retweets
-                </div>
-                117
-                <p class="primary-green right"><img src="images/icon-twitter.svg" alt="Twitter logo"><img src="images/icon-up.svg">303%</p>
-                </div>
-            </div>
-        <!--Twitter-->
-            <div class="card">
-                <div class="card-body">
-                <div class="card-title">
-                Likes
-                </div>
-                507
-                <p class="primary-green right"><img src="images/icon-twitter.svg" alt="Twitter logo"><img src="images/icon-up.svg">553%</p>
+                    <div class="flex-container">
+                        <section class="header left">
+                            <div class="card-title">
+                                <h2><p class="primary-text">Likes</p></h2>
+                            </div>
+                                <h2><p>507</p></h2>
+                        </section>
+                        <section class="header right">
+                            <p class="primary-green right"><img src="images/icon-twitter.svg" alt="Twitter logo"></p>
+                            <p class="primary-green right"><img src="images/icon-up.svg"> 553%</p>
+                        </section>
+                    </div>
                 </div>
             </div>
        <!--Youtube-->
             <div class="card">
                 <div class="card-body">
-                <div class="card-title">
-                Likes
-                </div>
-                107
-                <p class="primary-red right"><img src="images/icon-youtube.svg" alt="Youtube logo"><img src="images/icon-down.svg">19%</p>
+                    <div class="flex-container">
+                        <section class="header left">
+                            <div class="card-title">
+                                <h2><p class="primary-text">Likes</p></h2>
+                            </div>
+                                <h2><p>107</p></h2>
+                        </section>
+                    <section>
+                        <p class="primary-red right"><img src="images/icon-youtube.svg" alt="Youtube logo"></p>
+                        <p class="primary-red right"><img src="images/icon-down.svg"> 19%</p>
+                        </section>
+                    </div>
                 </div>
             </div>
         <div class="card">
                 <div class="card-body">
-                <div class="card-title">
-                Total Views
-                </div>
-                1407
-                <p class="primary-red right"><img src="images/icon-youtube.svg" alt="Youtube logo"><img src="images/icon-down.svg">12%</p>
+                    <div class="flex-container">
+                        <section class="header left">
+                            <div class="card-title">
+                                <h2><p class="primary-text">Total Views</p></h2>
+                            </div>
+                        <h2><p>1407</p></h2>
+                        </section>
+                    <section class="header right">
+                        <p class="primary-red right"><img src="images/icon-youtube.svg" alt="Youtube logo"></p>
+                        <p class="primary-red right"><img src="images/icon-down.svg"> 12%</p>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>

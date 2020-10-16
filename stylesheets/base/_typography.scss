@@ -9,6 +9,10 @@ $bodyFont: 14px;
 $regular: 400;
 $bold: 700;
 
+p{
+    color: $white;
+}
+
 .primary-text{
     color: $desatBlue;
     .light{
@@ -26,7 +30,7 @@ $bold: 700;
 .primary-green{
     color: $limeGreen;
     .right{
-        text-align: right;
+        @include alignAll(right);
     }//End right
 }//End
 

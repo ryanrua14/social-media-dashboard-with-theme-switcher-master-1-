@@ -22,6 +22,14 @@
     }//End
 
     #instagram{
+        border:{
+            top: 5px solid transparent; 
+            left: none;
+            right: none;
+            bottom: none;
+            image: $instagram;
+            image-slice: 4;
+        }//End
     }//End
 
     #youtube{
