@@ -1,0 +1,23 @@
+.dark{
+    @include transition(0.2s);
+    background: var(--dark-background);
+    .flex-container-header{
+        background: var(--dark-background-top);
+    }
+    .card{
+        background: var(--dark-card);
+    }
+    .primary-text{
+        color: var(--dark-primary-text);
+    }//End primary-text    
+    hr{
+        color: var(--light-secondary-text);
+    }//End primary-text
+    .secondary-text{
+        color: var(--dark-secondary-text);
+    }//End secondary   
+    p{
+        color: var(--dark-secondary-text);
+    }//End secondary
+}//End dark
+

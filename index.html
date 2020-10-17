@@ -8,10 +8,8 @@
 <!--Stylesheets-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
-  
-    <script type="module" src="scripts/switchTheme.js"></script>
-    
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+      
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -19,7 +17,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="dark">
 <div class="container-fluid">
     <section class="flex-container-header">
     <section class="header left">
@@ -29,7 +27,7 @@
         <section class="header right">
             <h6><p class="primary-text">Dark Mode
                 <label id="toggle-switch" class="switch">
-                    <input type="checkbox" onclick="switchTheme()">
+                    <input type="checkbox" id="checkbox">
                     <span class="slider round"></span>
                 </label></p></h6>
         </section>
@@ -46,7 +44,7 @@
                  @nathanf</p>
             </div>
                 <h1><p class="secondary-text">1987</p></h1>
-                <h5><p class="primary-text light">F O L L O  W E R S</p></h5>
+                <h5><p class="primary-text">F O L L O  W E R S</p></h5>
                 <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt> 12 Today</p></h6>
             </div>
         </div>
@@ -59,7 +57,7 @@
                         @nathanf</p>
                 </div>
                 <h1><p class="secondary-text">1044</p></h1>
-                <h5><p class="primary-text light">F O L L O  W E R S</p></h5>
+                <h5><p class="primary-text">F O L L O  W E R S</p></h5>
                 <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt> 99 Today</p></h6>
             </div>
         </div>
@@ -72,7 +70,7 @@
                      @realnathanf</p>
                 </div>
                   <h1><p class="secondary-text">11k<p></h1>
-                  <h5><p class="primary-text light">F O L L O  W E R S</p></h5>
+                  <h5><p class="primary-text">F O L L O  W E R S</p></h5>
                 <h6><p class="primary-green"><img class="svgicon" src="images/icon-up.svg" alt> 1099 Today</p></h6>
             </div>
         </div>
@@ -85,7 +83,7 @@
                          Nathan F.</p>
                     </div>
                      <h1><p class="secondary-text">8239</p></h1>
-                    <h5><p class="primary-text light">S U B S C R I B E R S</p></h5>
+                    <h5><p class="primary-text">S U B S C R I B E R S</p></h5>
                     <h6><p class="primary-red"><img class="svgicon" src="images/icon-down.svg" alt> 144 Today</p></h6>
                 </div>
         </div>
@@ -241,5 +239,7 @@
     Coded by <a href="#">Ryan Rua</a>.
     </div>
   </div>
+    <!--Scripts-->
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>

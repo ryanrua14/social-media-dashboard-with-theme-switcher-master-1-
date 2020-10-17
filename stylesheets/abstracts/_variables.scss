@@ -21,3 +21,18 @@ $paleBlue: hsl(225, 100%, 98%);
 $lightGrayBlue: hsl(227, 47%, 96%);
 $darkGrayBlue: hsl(228, 12%, 44%);
 $veryDarkBlue: hsl(230, 17%, 14%);
+
+:root{
+    --dark-background: #{$darkBlue};
+    --dark-background-top: #{darkBlueTop};
+    --dark-card: #{$darkDesatBlue};
+    --dark-primary-text: #{$desatBlue};
+    --dark-secondary-text: #{$white};
+    
+    
+    --light-background: #{$white};
+    --light-background-top: #{$paleBlue};
+    --light-card: #{$lightGrayBlue};
+    --light-primary-text: #{$darkGrayBlue};
+    --light-secondary-text: #{$veryDarkBlue};
+}

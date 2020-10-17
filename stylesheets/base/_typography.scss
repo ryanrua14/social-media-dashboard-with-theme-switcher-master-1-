@@ -11,20 +11,26 @@ $bold: 700;
 
 p{
     color: $white;
+    .light{
+        color: $veryDarkBlue;
+    }//End light
 }
 
 .primary-text{
-    color: $desatBlue;
+    font:{
+        weight: $regular;
+        size: 14px;
+    }//End
     .light{
+        color: $darkGrayBlue;
         font:{
             weight: $regular;
             size: 14px;
         }//End
-    }//End
+    }//End light
 }//End primary
 
 .secondary-text{
-    color: $white;
 }//End secondary
 
 .primary-green{

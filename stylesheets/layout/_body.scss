@@ -1,15 +1,12 @@
 html{
-    margin: 0;
     overflow:{
         y: auto;
         x: hidden;
     }
 }//End html
-
 body{
-    background: $darkBlue;
-}//End body
-
+    margin: 0;
+}
 section{
     margin: 5px;
     padding: 10px;

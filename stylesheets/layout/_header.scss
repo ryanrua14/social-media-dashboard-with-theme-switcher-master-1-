@@ -1,5 +1,6 @@
 .flex-container, .flex-container-header{
     display: flex;
+    width: 100%;
     flex:{
         wrap: wrap;
         direction: row;
@@ -19,8 +20,9 @@
 }//End
 
 .flex-container-header{
-    background-color: $darkBlueTop;
+    width: 100%;
 }//End
+
 
 @media only screen and (max-width: 740px){
     .flex-container-header{
@@ -28,7 +30,6 @@
         flex-direction: column;
         hr{
             width: 90%;
-            background-color: $desatBlue;
         }//End hr
         .right{
             

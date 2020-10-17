@@ -1,18 +1,32 @@
 @import url(https://fonts.google.com/specimen/Inter);
+:root {
+  --dark-background: #1e202a;
+  --dark-background-top: darkBlueTop;
+  --dark-card: #252a41;
+  --dark-primary-text: #8b97c6;
+  --dark-secondary-text: white;
+  --light-background: white;
+  --light-background-top: #f5f7ff;
+  --light-card: #f0f2fa;
+  --light-primary-text: #63687e;
+  --light-secondary-text: #1e202a;
+}
+
 p {
   color: white;
 }
+p .light {
+  color: #1e202a;
+}
 
 .primary-text {
-  color: #8b97c6;
-}
-.primary-text .light {
   font-weight: 400;
   font-size: 14px;
 }
-
-.secondary-text {
-  color: white;
+.primary-text .light {
+  color: #63687e;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .primary-green {
@@ -130,13 +144,12 @@ input:focus + .slider {
 }
 
 html {
-  margin: 0;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
 body {
-  background: #1e202a;
+  margin: 0;
 }
 
 section {
@@ -146,6 +159,7 @@ section {
 
 .flex-container, .flex-container-header {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
 }
@@ -167,7 +181,7 @@ section {
 }
 
 .flex-container-header {
-  background-color: #1f212e;
+  width: 100%;
 }
 
 @media only screen and (max-width: 740px) {
@@ -179,8 +193,60 @@ section {
   }
   .flex-container-header hr {
     width: 90%;
-    background-color: #8b97c6;
   }
+}
+.dark {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  background: var(--dark-background);
+}
+.dark .flex-container-header {
+  background: var(--dark-background-top);
+}
+.dark .card {
+  background: var(--dark-card);
+}
+.dark .primary-text {
+  color: var(--dark-primary-text);
+}
+.dark hr {
+  color: var(--light-secondary-text);
+}
+.dark .secondary-text {
+  color: var(--dark-secondary-text);
+}
+.dark p {
+  color: var(--dark-secondary-text);
+}
+
+.light {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  background: var(--light-background);
+}
+.light .flex-container-header {
+  background: var(--light-background-top);
+}
+.light .card {
+  background: var(--light-card);
+}
+.light .primary-text {
+  color: var(--light-primary-text);
+}
+.light hr {
+  color: var(--light-secondary-text);
+}
+.light p {
+  color: var(--light-secondary-text);
+}
+.light .secondary-text {
+  color: var(--light-secondary-text);
 }
 
 /*# sourceMappingURL=main.css.map */

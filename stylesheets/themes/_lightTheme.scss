@@ -1,0 +1,22 @@
+.light{
+    @include transition(0.2s);
+    background: var(--light-background);
+    .flex-container-header{
+        background: var(--light-background-top);
+    }
+    .card{
+        background: var(--light-card);
+    }//End card
+    .primary-text{
+        color: var(--light-primary-text);
+    }//End 
+    hr{
+        color: var(--light-secondary-text); 
+    }
+    p{
+        color: var(--light-secondary-text);
+    }
+    .secondary-text{
+        color: var(--light-secondary-text);
+    }
+}//End
