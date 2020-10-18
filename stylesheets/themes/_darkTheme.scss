@@ -1,7 +1,7 @@
 .dark{
     @include transition(0.2s);
     background: var(--dark-background);
-    .flex-container-header{
+    header{
         background: var(--dark-background-top);
     }
     .card{

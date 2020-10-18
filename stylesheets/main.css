@@ -142,6 +142,7 @@ input:focus + .slider {
 html {
   overflow-y: auto;
   overflow-x: hidden;
+  margin: 0;
 }
 
 body {
@@ -151,6 +152,10 @@ body {
 section {
   margin: 5px;
   padding: 10px;
+}
+
+header {
+  margin: 0;
 }
 
 .flex-container, .flex-container-header {
@@ -176,10 +181,6 @@ section {
   text-align: right;
 }
 
-.flex-container-header {
-  width: 100%;
-}
-
 @media only screen and (max-width: 740px) {
   .flex-container-header {
     align-content: left;
@@ -199,7 +200,7 @@ section {
   transition: 0.2s;
   background: var(--dark-background);
 }
-.dark .flex-container-header {
+.dark header {
   background: var(--dark-background-top);
 }
 .dark .card {
@@ -232,7 +233,7 @@ section {
   transition: 0.2s;
   background: var(--light-background);
 }
-.light .flex-container-header {
+.light header {
   background: var(--light-background-top);
 }
 .light .card {
