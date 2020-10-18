@@ -1,5 +1,7 @@
 @import url(https://fonts.google.com/specimen/Inter);
 :root {
+  --green-text: #1db489;
+  --red-text: #dc414c;
   --dark-background: #1e202a;
   --dark-background-top: darkBlueTop;
   --dark-card: #252a41;
@@ -29,18 +31,12 @@ p .light {
   font-size: 14px;
 }
 
-.primary-green {
-  color: #1db489;
-}
 .primary-green .right {
   align-content: right;
   justify-content: right;
   text-align: right;
 }
 
-.primary-red {
-  color: #dc414c;
-}
 .primary-red .right {
   text-align: right;
 }
@@ -70,11 +66,11 @@ p .light {
 }
 .card-deck #instagram {
   border-top: 5px solid transparent;
-  border-left: none;
   border-right: none;
+  border-left: none;
   border-bottom: none;
-  border-image: linear-gradient(#fdc468, #df4996);
-  border-image-slice: 4;
+  border-image: linear-gradient(to right, #fdc468, #df4996);
+  border-image-slice: 1;
 }
 .card-deck #youtube {
   border-top: 5px solid #c4032a;
@@ -221,6 +217,12 @@ section {
 .dark p {
   color: var(--dark-secondary-text);
 }
+.dark .primary-green {
+  color: var(--green-text);
+}
+.dark .primary-red {
+  color: var(--red-text);
+}
 
 .light {
   -webkit-transition: 0.2s;
@@ -247,6 +249,12 @@ section {
 }
 .light .secondary-text {
   color: var(--light-secondary-text);
+}
+.light .primary-green {
+  color: var(--green-text);
+}
+.light .primary-red {
+  color: var(--red-text);
 }
 
 /*# sourceMappingURL=main.css.map */

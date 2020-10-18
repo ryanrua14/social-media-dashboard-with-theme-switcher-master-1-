@@ -34,14 +34,12 @@ p{
 }//End secondary
 
 .primary-green{
-    color: $limeGreen;
     .right{
         @include alignAll(right);
     }//End right
 }//End
 
 .primary-red{
-    color: $brightRed;
     .right{
         text-align: right;
     }
